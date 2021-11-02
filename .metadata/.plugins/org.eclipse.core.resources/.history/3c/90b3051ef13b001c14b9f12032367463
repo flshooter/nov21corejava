@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package asgmt_two;
+
+/**
+ * @author rich
+ *
+ */
+public class GuessingGame {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

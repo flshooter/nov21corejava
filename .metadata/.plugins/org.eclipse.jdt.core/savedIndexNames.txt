@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+/home/rich/smoothstack/nov21corejava/.metadata/.plugins/org.eclipse.jdt.core
+341676194.index
+1865797976.index
+3218560991.index
+3564198728.index

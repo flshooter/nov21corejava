@@ -1,0 +1,83 @@
+package asgmt_one;
+/**
+ * @author Richard Croft
+ */
+public class StarMethods {
+		
+	// public methods to call private methods
+	public void printAscending(int maxStars) {
+		printStars(maxStars, true);
+		printDashes(maxStars * 2 + 1);
+	}
+	public void printDescending(int maxStars) {
+		printDashes(maxStars * 2 + 2);
+		System.out.println();
+		printStars(maxStars, false);
+	}
+	public void printAscendingJustified(int maxStars) {
+		justifiedStars(maxStars, true);
+		printDashes(maxStars *2 + 4);
+	}
+	public void printDescendingJustified(int maxStars) {
+		printDashes(maxStars *2 + 5);
+		System.out.println();
+		justifiedStars(maxStars, false);
+	}
+	
+	// private methods to handle display
+	private void printStars(int maxStars, boolean ascending) {
+		
+		if(ascending) {
+			// ascending stack of asterisks
+			for(int cnt = 1; cnt < maxStars + 1; cnt++) {
+				for(int cnt2 = 0; cnt2 < cnt; cnt2++) {				
+				System.out.print("*");
+				}
+				System.out.println();
+			}
+		} else {
+			// descending stack of asterisks
+			for(int cnt = maxStars; cnt > 0; cnt--) {
+				for(int cnt2 = cnt; cnt2 > 0; cnt2--) {
+					System.out.print("*");
+					}
+				System.out.println();
+				}
+			}
+		}
+	
+	private void justifiedStars(int maxStars, boolean ascending) {
+		String star = "*";
+		int center = 0;
+		// ascending group of justified asterisks		
+		if(ascending) {
+			// asc
+			center = maxStars/2 + 2;
+			for(int cnt = 0; cnt < maxStars; cnt += 2) {
+				System.out.printf("|%" + center + "s\n", star);
+				star = star + "**";
+				center++;
+				}
+			} else {
+				// descending group of justified asterisks
+				center = maxStars + 1;
+				for(int cnt = 0; cnt < maxStars - 1; cnt++) {
+					star = star + "*";
+				}
+				for(int cnt = maxStars; cnt > 0; cnt -= 2) {
+					System.out.printf("|%" + center + "s\n", star.substring(0,cnt));
+					center--;
+					}
+				}
+		}
+	
+	private void printDashes(int numDash) {
+		// prints row with numDash of dashes
+		for(int cnt = 0; cnt < numDash; cnt++) {
+			System.out.print("-");
+			}
+		}
+	}
+
+
+

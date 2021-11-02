@@ -1,0 +1,27 @@
+package asgmt_one;
+/**
+ * @author Richard Croft
+ */
+
+public class Pyramids {
+
+	public static void main(String[] args) {
+		StarMethods pyramid = new StarMethods();
+		
+		// ascending group of asterisks
+		System.out.println("1)");
+		pyramid.wedgeUp(4);
+		
+		// descending group of asterisks
+		System.out.println("\n\n2)");
+		pyramid.wedgeDown(4);
+		
+		// ascending group of justified asterisks
+		System.out.println("\n3)");
+		pyramid.pyrUp(7);
+		
+		// descending group of justified asterisks
+		System.out.println("\n\n4)");
+		pyramid.pyrDown(7);
+	}
+}

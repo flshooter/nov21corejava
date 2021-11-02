@@ -1,0 +1,10 @@
+package asgmt_two;
+/**
+ * @author Richard Croft
+ */
+public class GuessingGame {
+
+	public static void main(String[] args) {
+		
+	}
+}
