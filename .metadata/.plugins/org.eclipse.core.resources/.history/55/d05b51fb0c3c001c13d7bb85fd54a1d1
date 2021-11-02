@@ -21,7 +21,7 @@ public class Pyramid {
 		// ascending group of justified asterisks		
 		if(ascending) {
 			// asc
-			center = maxStars/2 + 3;
+			center = maxStars/2 + 2;
 			for(int cnt = 0; cnt < maxStars; cnt += 2) {
 				System.out.printf("%" + center + "s\n", star);
 				star = star + "**";
@@ -29,7 +29,7 @@ public class Pyramid {
 				}
 			} else {
 				// descending group of justified asterisks
-				center = maxStars + 2;
+				center = maxStars + 1;
 				for(int cnt = 0; cnt < maxStars - 1; cnt++) {
 					star = star + "*";
 				}
