@@ -16,8 +16,8 @@ class LineTest {
 	@Test
 	void testgetgetDistance() {
 		Line l1 = new Line(1, 1, 5, 1);
-		assertEquals(l1.getDistance(), 4);
-		assertNotEquals(l1.getDistance(), 3);
+		assertEquals(l1.getDistance(), 4, .0001);
+		assertNotEquals(l1.getDistance(), 3, .0001);
 	}
 	
 	@Test
